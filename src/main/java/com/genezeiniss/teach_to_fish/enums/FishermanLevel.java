@@ -1,4 +1,4 @@
-package com.genezeiniss.jooq_liquibase_e2e.enums;
+package com.genezeiniss.teach_to_fish.enums;
 
 public enum FishermanLevel {
     JUNIOR, SENIOR, STAFF

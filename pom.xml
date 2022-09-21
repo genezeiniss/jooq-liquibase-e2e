@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>com.genezeiniss</groupId>
-    <artifactId>jooq-liquibase-e2e</artifactId>
+    <artifactId>teach-to-fish</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jooq-liquibase-e2e</name>
-    <description>jooq-liquibase-e2e</description>
+    <name>teach-to-fish</name>
+    <description>teach-to-fish</description>
 
     <properties>
         <java.version>11</java.version>
@@ -124,7 +124,7 @@
                         </generate>
                         <!-- specify the location of generated records -->
                         <target>
-                            <packageName>com.genezeiniss.jooq_liquibase_e2e.persistence.generated</packageName>
+                            <packageName>com.genezeiniss.teach_to_fish.persistence.generated</packageName>
                             <directory>target/generated-sources/jooq</directory>
                         </target>
                     </generator>

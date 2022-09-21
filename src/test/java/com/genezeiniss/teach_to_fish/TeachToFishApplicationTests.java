@@ -1,10 +1,10 @@
-package com.genezeiniss.jooq_liquibase_e2e;
+package com.genezeiniss.teach_to_fish;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JooqLiquibaseApplicationTests {
+class TeachToFishApplicationTests {
 
     @Test
     void contextLoads() {

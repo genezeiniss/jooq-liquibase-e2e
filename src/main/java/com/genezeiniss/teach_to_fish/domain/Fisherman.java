@@ -1,6 +1,6 @@
-package com.genezeiniss.jooq_liquibase_e2e.domain;
+package com.genezeiniss.teach_to_fish.domain;
 
-import com.genezeiniss.jooq_liquibase_e2e.enums.FishermanLevel;
+import com.genezeiniss.teach_to_fish.enums.FishermanLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

@@ -1,13 +1,13 @@
-package com.genezeiniss.jooq_liquibase_e2e;
+package com.genezeiniss.teach_to_fish;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JooqLiquibaseApplication {
+public class TeachToFishApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JooqLiquibaseApplication.class, args);
+        SpringApplication.run(TeachToFishApplication.class, args);
     }
 
 }

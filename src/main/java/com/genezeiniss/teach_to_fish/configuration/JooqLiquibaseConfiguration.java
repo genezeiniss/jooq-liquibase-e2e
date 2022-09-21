@@ -1,4 +1,4 @@
-package com.genezeiniss.jooq_liquibase_e2e.configuration;
+package com.genezeiniss.teach_to_fish.configuration;
 
 //@Configuration
 //public class JooqLiquibaseConfiguration {

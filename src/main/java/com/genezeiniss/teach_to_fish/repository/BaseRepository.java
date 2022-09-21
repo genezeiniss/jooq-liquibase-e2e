@@ -1,6 +1,6 @@
-package com.genezeiniss.jooq_liquibase_e2e.repository;
+package com.genezeiniss.teach_to_fish.repository;
 
-import com.genezeiniss.jooq_liquibase_e2e.domain.BaseEntity;
+import com.genezeiniss.teach_to_fish.domain.BaseEntity;
 import lombok.SneakyThrows;
 import org.jooq.DSLContext;
 import org.jooq.Table;

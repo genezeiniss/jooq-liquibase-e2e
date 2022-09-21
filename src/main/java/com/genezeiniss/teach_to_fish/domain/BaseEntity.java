@@ -1,4 +1,4 @@
-package com.genezeiniss.jooq_liquibase_e2e.domain;
+package com.genezeiniss.teach_to_fish.domain;
 
 import lombok.Data;
 

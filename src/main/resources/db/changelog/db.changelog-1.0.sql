@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS fisherman
 -- changeset gzeiniss:1.3
 CREATE TABLE IF NOT EXISTS fish
 (
-    fish_id      VARCHAR(36) PRIMARY KEY,
-    fisherman_id VARCHAR(36) NOT NULL,
-    type         LONGTEXT    NOT NULL,
-    caught_on    TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    id            VARCHAR(36) PRIMARY KEY,
+    fisherman_id  VARCHAR(36) NOT NULL,
+    type          LONGTEXT    NOT NULL,
+    registered_on TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_fish_fisherman_id FOREIGN KEY (fisherman_id) REFERENCES fisherman (id)
 );

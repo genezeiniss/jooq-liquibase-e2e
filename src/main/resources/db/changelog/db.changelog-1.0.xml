@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.15.xsd">
+
+    <changeSet author="gzeiniss" id="1">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="fisherman"/>
+            </not>
+        </preConditions>
+        <createTable tableName="fisherman">
+            <column name="id" type="VARCHAR(36)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(264)"/>
+            <column name="registered_on" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="gzeiniss" id="2">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="fish"/>
+            </not>
+        </preConditions>
+        <createTable tableName="fish">
+            <column name="id" type="VARCHAR(36)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="fisherman_id" type="VARCHAR(264)">
+                <constraints nullable="false" foreignKeyName="fk_fish_fisherman_id" references="fisherman(id)"/>
+            </column>
+            <column name="type" type="LONGTEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="registered_on" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

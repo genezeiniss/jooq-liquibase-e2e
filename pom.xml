@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>com.genezeiniss</groupId>
-    <artifactId>teach-to-fish</artifactId>
+    <artifactId>jooq-liquibase-e2e</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>teach-to-fish</name>
-    <description>teach-to-fish</description>
+    <name>jooq-liquibase-e2e</name>
+    <description>jooq-liquibase-e2e</description>
 
     <properties>
         <java.version>11</java.version>

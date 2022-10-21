@@ -35,12 +35,12 @@ public abstract class BaseRepository<E extends BaseEntity, R extends TableRecord
     }
 
     @SneakyThrows
-    public String create(E entity) {
+    public E create(E entity) {
         entity.setId(String.valueOf(UUID.randomUUID()));
         R record = db.newRecord(getDBTable());
         modelMapper.map(entity, record);
         record.insert();
-        return entity.getId();
+        return entity;
     }
 
     protected Function<String, Condition> initFindByPrimaryKeyConditionProvider() {

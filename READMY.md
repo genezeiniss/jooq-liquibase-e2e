@@ -6,7 +6,7 @@ active records generation.
 Involved libraries and plugins: `java`,`spring-boot`, `maven`, `liquibase-maven-plugin`, `mysql-connector-java`
 , `jooq-codegen-maven`, `jooq-metedata-extention-liquibase` and `modelmapper`.
 
-## How to start MySql on Podman container
+## How to start MySql on Podman
 
 Install podman
 `$ brew install podman`
@@ -16,7 +16,7 @@ Start podman
 
 `$ podman machine start`
 
-Download MySQL podman Iimage
+Download MySQL Podman image
 `$ podman pull mysql:8`
 
 Run MySQL database instance in a container
